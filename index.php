@@ -31,8 +31,6 @@ mysqli_close($CONNEXION);
         <div class="row column text-center" id="me">
             <h1 class="title">Paul Thibault</h1>
             <p class="description">Jacky tunning d'adobe premiere et d'after effect</p>
-<!--            <a href="#" class="button large">Learn More</a>-->
-<!--            <a href="#" class="button large hollow">Learn Less</a>-->
         </div>
     </div>
     <div class="row wrapper">
@@ -60,49 +58,6 @@ mysqli_close($CONNEXION);
             <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
         </div>
     </div>
-    <!--    <div class="row column">-->
-<!--        <h3>Our Recent Work</h3>-->
-<!--    </div>-->
-<!--    <div class="row medium-up-3 large-up-4">-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img class="thumbnail" src="http://placehold.it/550x550">-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <hr>-->
-
     <footer class="footer">
         <div class="row">
             <div class="small-12 medium-6 large-5 columns">
@@ -129,10 +84,10 @@ mysqli_close($CONNEXION);
             </div>
         </div>
     </footer>
-    <scritp type="text/javascript" src="js/vendor/jquery.min.js"></scritp>
-    <scritp type="text/javascript" src="js/vendor/what-input.min.js"></scritp>
-    <scritp type="text/javascript" src="js/foundation.min.js"></scritp>
-    <scritp type="text/javascript" src="js/app.js"></scritp>
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/what-input.min.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     </body>
     </body>
 </html>
