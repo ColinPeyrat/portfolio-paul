@@ -1,3 +1,13 @@
 .gris {
  opacity: 0.5;       
 }
+.titre{
+ font-weight : bold;
+}
+
+.intitule{
+ color : grey;
+}
+img{
+ float : left;
+}

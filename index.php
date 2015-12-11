@@ -1,24 +1,10 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset=UTF-8 />
-		
-		
+		<link rel="stylesheet" href="style.css">
 		<title>PHP</title>
-			<style>
-			.titre{
-				font-weight : bold;
-			}
-			
-			.intitule{
-				color : grey;
-			}
-			img{
-			float : left;
-			}
-			</style>
 	</head>
-	<body xml:lang="fr" lang="fr">
 <?php
 require_once('connexion.php');
 mysqli_query($CONNEXION, "SET lc_time_names = 'fr_FR'");
@@ -70,9 +56,9 @@ function realisateurs_prenom_nom ($id_film, $CONNEXION)
 		$retour .=$ligne['prenom']. " ".$ligne['nom'];
 		}
 	return $retour;
-} 
+}
 
-	
+
 function genre ($CONNEXION, $id_film)
  {
 	$requete = "SELECT nom FROM (SELECT id_genre FROM genres_films where id_film = $id_film) AS R2 INNER JOIN genres ON id_genre=id";
@@ -89,11 +75,11 @@ function genre ($CONNEXION, $id_film)
 		$retour .=$ligne['nom']. " ";
 		}
 	return $retour;
- } 	
+ }
 
  function acteurs_prenom_nom($CONNEXION, $id_film)
  {
-	
+
 	$requete = "SELECT nom, prenom FROM(SELECT id_personne FROM acteurs where id_film=$id_film) AS R3 INNER JOIN personnes ON id_personne=id";
 	$resultat = mysqli_query($CONNEXION, $requete);
 		if (!$resultat)
@@ -153,7 +139,7 @@ echo "<img src='", $ligne['affiche'],"'/> <span class='titre'>",$ligne['titre'],
 			"</td>
 		</tr>
 	</table></br></br></br></br>\n";
-} 
+}
 
 // fermeture de la connexion
 mysqli_close($CONNEXION);
@@ -169,7 +155,7 @@ mysqli_close($CONNEXION);
     </head>
     <body>
         <h2>Affichage de texte avec PHP</h2>
-        
+
         <p>
             Cette ligne a été écrite entièrement en HTML.<br />
             <?php echo "Celle-ci a été écrite entièrement en PHP."; ?>
