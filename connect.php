@@ -4,13 +4,13 @@
 		define ('SERVEUR_BD','localhost');
 		define ('LOGIN_BD','root');
 		define ('PASS_BD','root');
-		define ('NOM_BD','movie'); 
+		define ('NOM_BD','paul-portfolio');
 	}
 	// serveur de déploiement : mmi-agences ou Olympe
 	else {
 		define ('SERVEUR_BD','localhost');
-		define ('LOGIN_BD','user');
+		define ('LOGIN_BD','root');
 		define ('PASS_BD','root');
-		define ('NOM_BD','test');
+		define ('NOM_BD','paul-portfolio');
 	}
 ?>
