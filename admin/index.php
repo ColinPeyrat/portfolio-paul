@@ -18,13 +18,10 @@ $password = "admin";
 ////////////////////////////////////////////////////////
 //Quand l'admin est authentifié
 if(isset($_SESSION["user"])){
-
     //redirige vers le panneau d'administration
     header("Location:admin.php");
-
 //Quand il ne l'ai pas
 } else {
-
     //traitement de la connection
     if (isset($_POST["action"]) && $_POST["action"] == "Se connecter") {
         echo "<div class='row'>";
@@ -50,7 +47,6 @@ if(isset($_SESSION["user"])){
             header("Location:admin.php");
         }
         echo "</div>";
-
     }
 ?>
     <form action="index.php" method="post">
@@ -73,7 +69,6 @@ if(isset($_SESSION["user"])){
      </form>
     <?php
 }
-
 ?>
 
     </footer>
