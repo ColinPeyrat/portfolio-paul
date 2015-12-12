@@ -68,6 +68,7 @@ mysqli_close($CONNEXION);
                     <a href="#">Portfolio</a>
                 </p>
                 <p class="copywrite">All right reserved © 2015</p>
+                <p class="copywrite"><a href="admin/index.php">Se connecter</a></p>
             </div>
             <div class="small-12 medium-6 large-4 columns">
                 <ul class="contact">
