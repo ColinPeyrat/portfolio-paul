@@ -47,6 +47,7 @@ if(isset($_SESSION["user"])){
             <?php
         } else {
             $_SESSION["user"] = "admin";
+            header("Location:admin.php");
         }
         echo "</div>";
 
