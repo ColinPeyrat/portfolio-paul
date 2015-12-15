@@ -19,14 +19,14 @@
 	}
 
 	//essaie de créer une instance de PDO et la stock dans la variable $pdo
-	try
-	{
-		$pdo = new PDO('mysql:host='.SERVEUR_BD.';dbname=paul-portfolio', 'root', 'root');
-	}
-	catch(Exception $e)
-	{
-		echo 'Echec de la connexion à la base de données';
-		exit();
-	}
+	// try
+	// {
+	// 	$pdo = new PDO('mysql:host='.SERVEUR_BD.';dbname=paul-portfolio', 'root', 'root');
+	// }
+	// catch(Exception $e)
+	// {
+	// 	echo 'Echec de la connexion à la base de données';
+	// 	exit();
+	// }
 
 ?>

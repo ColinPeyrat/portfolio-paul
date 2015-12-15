@@ -32,12 +32,14 @@ if(isset($_POST["action"]) && $_POST["action"] == "Ajouter"){
         if(isset($_POST["actif"]) && $_POST["actif"] =="on")
             $actif = "0";
 
-        $st = $pdo->prepare("INSERT INTO article (titre,sous_titre,contenu,date_article,actif) values (:title,:subtitle,:content,NOW(),:actif)");
-        $st->bindParam("title",$_POST["title"]);
-        $st->bindParam("subtitle",$_POST["subtitle"]);
-        $st->bindParam("content",$_POST["content"]);
-        $st->bindParam("actif",$actif);
-        $st->execute();
+        // $st = $pdo->prepare("INSERT INTO article (titre,sous_titre,contenu,date_article,actif) values (:title,:subtitle,:content,NOW(),:actif)");
+        // $st->bindParam("title",$_POST["title"]);
+        // $st->bindParam("subtitle",$_POST["subtitle"]);
+        // $st->bindParam("content",$_POST["content"]);
+        // $st->bindParam("actif",$actif);
+        // $st->execute();
+        $request = "INSERT INTO article (titre,sous_titre,contenu,date_article,actif) values ('".$_POST["title"]."','".$_POST["subtitle"]."','".$_POST["content"]."','NOW()','".$actif."')";
+        $CONNEXION->query($request) or die ('Erreur '.$request.' '.$CONNEXION->error);
         ?>
         <div class="row">
             <div class="success callout" data-closable>

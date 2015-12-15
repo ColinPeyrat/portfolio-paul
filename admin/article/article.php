@@ -29,9 +29,10 @@ require('../../connexion.php');
 <div class="row">
     <ul class="accordion" data-accordion role="tablist">
         <?php
-        $st = $pdo->prepare("select * from article");
-        $st->execute();
-        while($row = $st->fetch(PDO::FETCH_ASSOC)) {
+        $request = "SELECT * FROM article";
+        $result = $CONNEXION->query($request) or die ('Erreur '.$request.' '.$CONNEXION->error);
+        
+        while ($row = $result->fetch_assoc()) {
             if($row["actif"] == "0")
                 $actif = "oui";
             else
@@ -50,11 +51,9 @@ require('../../connexion.php');
                 </div>
             </li>
             <?php
-
         }
 
-
-        ?>
+       ?>
 
     </ul>
 
