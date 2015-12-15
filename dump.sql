@@ -31,7 +31,7 @@ CREATE TABLE `article` (
   `sous_titre` varchar(255) DEFAULT NULL,
   `contenu` text,
   `date_article` date DEFAULT NULL,
-  `modif_article` date DEFAULT NULL,
+  `date_modif` date DEFAULT NULL,
   `actif` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
