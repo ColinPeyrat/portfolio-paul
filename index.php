@@ -20,8 +20,8 @@ mysqli_close($CONNEXION);
         <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
                 <li class="menu-text">Paul Thibault</li>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="blog.php">Blog</a></li>
                 <li><a href="#">Portfolio</a></li>
             </ul>
         </div>
@@ -57,6 +57,11 @@ mysqli_close($CONNEXION);
             <h3>Touchage de nouille</h3>
             <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
         </div>
+    </div>
+    <div class="row">
+      <div class="small-3 small-centered columns text-center wrapper">
+        <a class="hollow secondary button" href="ressources/CV_Paul_Thibault.pdf" target="_blank"><i class="fi-download"></i> Voir mon CV</a>
+    </div>
     </div>
     <footer class="footer">
         <div class="row">

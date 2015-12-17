@@ -45,8 +45,8 @@ require('../../connexion.php');
                     <hr>
                     <?= $row["contenu"] ?>
                     <hr>
-                    <a href="#" class="button"><i class="fi-pencil"></i> Modifier</a>
-                    <a href="#" class="button alert"><i class="fi-x"></i> Supprimer</a>
+                    <a href="update_article.php?id=<?= $row["id"]?>" class="button"><i class="fi-pencil"></i> Modifier</a>
+                    <a href="delete_article.php?id=<?= $row["id"]?>" class="button alert"><i class="fi-x"></i> Supprimer</a>
 
                 </div>
             </li>

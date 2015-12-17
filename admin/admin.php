@@ -20,10 +20,14 @@ if(!isset($_SESSION["user"])){
             <div class="small-3 columns">
                 <ul class="menu vertical">
                     <li><a href="article/add_article.php">Ajouter un article</a></li>
-                    <li><a href="article/article.php">Gerer les articles</a></li>
+                    <li><a href="article/index.php">Gerer les articles</a></li>
                 </ul>
             </div>
-            <div class="small-9 columns"><h3>Bienvenue sur l'espace d'administration</h3></div>
+            <div class="small-9 columns">
+                <h3>Bienvenue sur l'espace d'administration</h3>
+                <a href="../index.php"><i class="fi-arrow-left"></i> Retour au site</a>
+            </div>
+
         </div>
 
         <script type="text/javascript" src="../js/vendor/jquery.min.js"></script>
