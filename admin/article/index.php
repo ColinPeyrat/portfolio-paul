@@ -29,7 +29,7 @@ require('../../connexion.php');
 <div class="row">
     <ul class="accordion" data-accordion role="tablist">
         <?php
-        $request = "SELECT * FROM article";
+        $request = "SELECT * FROM article ORDER BY id DESC";
         $result = $CONNEXION->query($request) or die ('Erreur '.$request.' '.$CONNEXION->error);
         
         while ($row = $result->fetch_assoc()) {

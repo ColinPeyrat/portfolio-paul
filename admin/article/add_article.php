@@ -38,7 +38,7 @@ if(isset($_POST["action"]) && $_POST["action"] == "Ajouter"){
         // $st->bindParam("content",$_POST["content"]);
         // $st->bindParam("actif",$actif);
         // $st->execute();
-        $request = "INSERT INTO article (titre,sous_titre,contenu,date_article,actif) values ('".$_POST["title"]."','".$_POST["subtitle"]."','".$_POST["content"]."','NOW()','".$actif."')";
+        $request = "INSERT INTO article (titre,sous_titre,contenu,date_article,actif) values ('".$_POST["title"]."','".$_POST["subtitle"]."','".$_POST["content"]."',NOW(),'".$actif."')";
         $CONNEXION->query($request) or die ('Erreur '.$request.' '.$CONNEXION->error);
         ?>
         <div class="row">

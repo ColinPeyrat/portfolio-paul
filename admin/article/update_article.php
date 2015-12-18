@@ -51,7 +51,7 @@ if(isset($_POST["action"]) && $_POST["action"] == "Modifier"){
         if(isset($_POST["actif"]) && $_POST["actif"] =="on")
             $actif = "0";
 
-        $request = "UPDATE article SET titre='".$_POST["title"]."',sous_titre='".$_POST["subtitle"]."',contenu='".$_POST["content"]."',date_modif='NOW()',actif='".$actif."' WHERE id=".$row["id"];
+        $request = "UPDATE article SET titre='".$_POST["title"]."',sous_titre='".$_POST["subtitle"]."',contenu='".$_POST["content"]."',date_modif=NOW(),actif='".$actif."' WHERE id=".$row["id"];
         $CONNEXION->query($request) or die ('Erreur '.$request.' '.$CONNEXION->error);
         header("Location:index.php");
     }

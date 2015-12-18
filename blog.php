@@ -13,8 +13,6 @@
 <?php
 require_once('connexion.php');
 
-// fermeture de la connexion
-mysqli_close($CONNEXION);
 ?>
 <body>
 <div class="top-bar">
@@ -29,23 +27,38 @@ mysqli_close($CONNEXION);
 </div>
 <div class="callout large primary">
 	<div class="row column text-center">
-		<h1>Our Blog</h1>
-		<h2 class="subheader">Such a Simple Blog Layout</h2>
+		<h1>Mon blog</h1>
+		<h2 class="subheader">Bienvenue</h2>
 	</div>
-</div>  
+</div>
 <div class="row medium-8 large-7 columns">
-	<div class="blog-post">
-		<h3>Awesome blog post title <small>3/6/2015</small></h3>
-			<img class="thumbnail" src="http://placehold.it/850x350">
-			<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-			<div class="callout">
-			<ul class="menu simple">
-				<li><a href="#">Author: Mike Mikers</a></li>
-				<li><a href="#">Comments: 3</a></li>
-			</ul>
-		</div>
-	</div>
-</div>	
+<?php
+
+$request = "SELECT * FROM article WHERE actif=0";
+$result = $CONNEXION->query($request) or die ('Erreur '.$request.' '.$CONNEXION->error);
+
+while ($row = $result->fetch_assoc()) {
+
+    $requestComments = "SELECT * FROM commentaire WHERE article_id=".$row["id"];
+    $resultComments = $CONNEXION->query($requestComments) or die ('Erreur '.$request.' '.$CONNEXION->error);
+    $nbComments = $resultComments->num_rows;
+
+    ?>
+    <div class="blog-post wrapper">
+        <h3><?= $row["titre"] ?><small> <?= date("j/m/Y - h:m:s",strtotime($row["date_article"])) ?></small></h3>
+        <p><?= $row["contenu"] ?></p>
+        <div class="callout">
+            <ul class="menu simple">
+                <li><a href="#">Commentaire: <?= $nbComments ?></a></li>
+            </ul>
+        </div>
+    </div>
+    <?php
+
+}
+
+?>
+</div>
 <footer class="footer">
         <div class="row">
             <div class="small-12 medium-6 large-5 columns">
