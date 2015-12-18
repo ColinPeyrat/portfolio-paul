@@ -12,9 +12,5 @@
 		 define ('LOGIN_BD','root');
 		 define ('PASS_BD','root');
 		 define ('NOM_BD','paul-portfolio');
-//		define ('SERVEUR_BD','localhost');
-//		define ('LOGIN_BD','peyratc');
-//		define ('PASS_BD','bS1NYm');
-//		define ('NOM_BD','peyratc');
 	}
 ?>

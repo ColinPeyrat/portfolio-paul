@@ -22,7 +22,7 @@ mysqli_close($CONNEXION);
                 <li class="menu-text">Paul Thibault</li>
                 <li><a href="index.php">Accueil</a></li>
                 <li><a href="blog.php">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
             </ul>
         </div>
     </div>
@@ -68,9 +68,9 @@ mysqli_close($CONNEXION);
             <div class="small-12 medium-6 large-5 columns">
                 <p class="logo"><i class="fi-shield"></i> Paul Thibault</p>
                 <p class="footer-links">
-                    <a href="#">Accueil</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Portfolio</a>
+                    <a href="index.php">Accueil</a>
+                    <a href="blog.php">Blog</a>
+                    <a href="portfolio.php">Portfolio</a>
                 </p>
                 <p class="copywrite">All right reserved © 2015</p>
                 <p class="copywrite"><a href="admin/index.php">Se connecter</a></p>
@@ -78,8 +78,8 @@ mysqli_close($CONNEXION);
             <div class="small-12 medium-6 large-4 columns">
                 <ul class="contact">
                     <li><p><i class="fi-marker"></i>Annecy, France</p></li>
-                    <li><p><i class="fi-telephone"></i>06 j'ai oublié</p></li>
-                    <li><p><i class="fi-mail"></i>contact@emperor.com</p></li>
+                    <li><p><i class="fi-telephone"></i>06 32 44 54 27</p></li>
+                    <li><p><i class="fi-mail"></i><a href="mailto:paulthibault24@gmail.com">paulthibault24@gmail.com</a></p></li>
                 </ul>
             </div>
             <div class="small-12 medium-12 large-3 columns">
